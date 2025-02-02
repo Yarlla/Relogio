@@ -67,7 +67,9 @@ section{
 }
 
 .clima img {
-    width: 24px;
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
     margin-left: 5px;
 }
 
