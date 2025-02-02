@@ -7,48 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="relogio">
 
-        <div class="time-boxes">
-
-            <div class="area">
-                <span id="horas">00</span>
-                <span id="tempo">Horas</span>
-            </div>
-
-            <div class="area">
-                <span id="minutos">00</span>
-                <span id="tempo">Minutos</span>
-            </div>
-
-            <div class="area">
-                <span id="segundos">00</span>
-                <span id="tempo">Segundos</span>
-            </div>
-
+    <header>
+        <div id="title">
+            <h1>Relógio Digital</h1>
         </div>
+    </header>
 
-        <div class="footer">
+    <section>
 
-            <div>
-                <span id="data">00/00/0000</span> <br>
-                <span id="dia">Dia</span>
-            </div>
+        <div class="relogio">
 
-            <div class="area-lc">
-
-                <div class="local">
-                    <span id="local">Cedro</span>
+            <div class="time-boxes">
+    
+                <div class="area">
+                    <span id="horas">00</span>
+                    <span id="tempo">Horas</span>
                 </div>
-
-                <div class="clima">
-                    <span id="clima">23°</span>
-                    <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Sol e nuvem">
+    
+                <div class="area">
+                    <span id="minutos">00</span>
+                    <span id="tempo">Minutos</span>
                 </div>
-
+    
+                <div class="area">
+                    <span id="segundos">00</span>
+                    <span id="tempo">Segundos</span>
+                </div>
+    
             </div>
-    </div>
+    
+            <div class="footer">
+    
+                <div class="date-bottom">
+                    <span id="data">00/00/0000</span>
+                    <span id="dia">Dia</span>
+                    <button id="bottom-alarme" onclick="ativarAlarme()">Ativar Alarme</button>
+                    <audio id="audio" src="audio/audio-davidkushner.mp3"></audio>
+                </div>
+    
+                <div class="area-lc">
+    
+                    <div class="local">
+                        <span id="local">Cedro</span>
+                    </div>
+    
+                    <div class="clima">
+                        <span id="temperatura">23°</span>
+                        <img id="icone-clima" src="" alt="Ícone do clima">
+                    </div>
+    
+                </div>
+        </div>
+    
+        <script src="script.js"></script>
 
-    <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <p>&copy;LauraMatos&YarllaSales</p>
+    </footer>
+    
 </body>
 </html>
