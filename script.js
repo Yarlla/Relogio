@@ -1,6 +1,6 @@
 const cidade = 'Cedro'; 
 const unidadeMedida = 'metric'; // unidade da temperatura
-const apiKey = '9dac1a61ad91c38c986f1fc63aa0c1a1'; // chave da API 
+const apiKey = 'd006f0c9a666ec387d2c1c236b7c67fb'; // chave da API 
 
 var h = document.getElementById('horas'); 
 var min = document.getElementById('minutos');
@@ -48,7 +48,7 @@ const dia = setInterval(function time() {
 setInterval(async function () {
     try {
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=${unidadeMedida}&appid=${apiKey}&lang=pt_br`
+            `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&units=${unidadeMedida}`
         );
         
         if (response.ok) {
